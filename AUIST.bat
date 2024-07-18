@@ -1,7 +1,7 @@
 @echo off
 echo Automated Update Integration and Streamlined Tool(AUIST)
 echo Version: 0.1
-echo Build: AUIST.v0.1.20240718.bat.2
+echo Build: AUIST.v0.1.20240718.bat.3
 echo Applicable Windows Version: Windows 10 19045.4651
 echo ------------------------------------------------------------
 echo 建立目錄
@@ -101,3 +101,4 @@ echo ------------------------------------------------------------
 rmdir C:\mount
 echo ------------------------------------------------------------
 echo 作業完成
+pause
