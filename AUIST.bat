@@ -1,7 +1,7 @@
 @echo off
 echo Automated Update Integration and Streamlined Tool(AUIST)
 echo Version: 0.1
-echo Build: AUIST.v0.1.20240718.bat.1
+echo Build: AUIST.v0.1.20240718.bat.2
 echo Applicable Windows Version: Windows 10 19045.4651
 echo ------------------------------------------------------------
 echo 建立目錄
@@ -51,6 +51,7 @@ echo 處理作業系統(install.wim)
 echo ------------------------------------------------------------
 echo 處理作業系統-移除不需要的Appx功能
 echo Remove Appx-For Windows 10
+Dism /Image:C:\mount /Remove-ProvisionedAppxPackage /PackageName:Microsoft.549981C3F5F10_1.1911.21713.0_neutral_~_8wekyb3d8bbwe
 Dism /Image:C:\mount /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsMaps_2019.716.2316.0_neutral_~_8wekyb3d8bbwe
 Dism /Image:C:\mount /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsFeedbackHub_2019.1111.2029.0_neutral_~_8wekyb3d8bbwe
 Dism /Image:C:\mount /Remove-ProvisionedAppxPackage /PackageName:microsoft.windowscommunicationsapps_16005.11629.20316.0_neutral_~_8wekyb3d8bbwe
